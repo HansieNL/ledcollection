@@ -4,11 +4,12 @@ const generatedScreensavers = require("./assets/json/generated-screensavers.json
 const { sleep, getDifference } = require('./lib/helpers');
 
 const _settingsKey = `${Homey.manifest.id}.settings`;
-const Homey2023 = Homey.platform === 'local' && Homey.platformVersion === 2
 
 class App extends Homey.App {
   async onInit() {
     try {
+        const Homey2023 = Homey.platformVersion === 2
+
         if(!Homey2023) {
             this.log(`${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
     
