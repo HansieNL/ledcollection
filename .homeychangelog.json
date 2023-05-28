@@ -97,5 +97,8 @@
   },
   "3.2.1": {
     "en": "NEW: prevent install on HP23"
+  },
+  "3.2.2": {
+    "en": "FIX: add message for HP23 users"
   }
 }
