@@ -91,5 +91,8 @@
   },
   "3.1.5": {
     "en": "FIX: compatibility with Homey 2023"
+  },
+  "3.2.0": {
+    "en": "NEW: prevent install on HP23"
   }
 }
