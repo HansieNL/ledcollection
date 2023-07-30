@@ -8,7 +8,7 @@ const _settingsKey = `${Homey.manifest.id}.settings`;
 class App extends Homey.App {
   async onInit() {
     try {
-        const Homey2023 = Homey.platformVersion === 2
+        const Homey2023 = this.homey.platformVersion === 2;
 
         if(!Homey2023) {
             this.log(`${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
@@ -29,7 +29,6 @@ class App extends Homey.App {
     } catch (error) {
         this.log(error)
     }
-   
   }
 
   async initSettings() {
