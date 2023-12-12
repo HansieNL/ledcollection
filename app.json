@@ -1,12 +1,15 @@
 {
   "id": "openmindnl.ledcollection",
-  "version": "3.2.3",
+  "version": "3.3.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#000000",
-  "platformFeatures": {
-    "ledring": "required"
-  },
+  "platforms": [
+    "local"
+  ],
+  "platformLocalRequiredFeatures": [
+    "ledring"
+  ],
   "name": {
     "en": "LED-Ring collection",
     "nl": "LED-Ring collectie"
